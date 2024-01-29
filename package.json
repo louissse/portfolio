@@ -10,6 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/oxygen": "^5.0.8",
+    "@fontsource/paytone-one": "^5.0.18",
     "astro": "^4.2.6"
   },
   "devDependencies": {

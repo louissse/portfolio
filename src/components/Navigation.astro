@@ -1,0 +1,110 @@
+---
+
+---
+
+<header>
+  <nav id="navbar">
+    <ul class="navigation">
+      <li>
+        <h1>
+          <a href="index.html">
+            <span class="fa-solid fa-broom" aria-hidden="true"></span> Louise Høpfner</a
+          >
+        </h1>
+      </li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/louisehopfner/">
+          <span class="fa-brands fa-linkedin animate pop" aria-hidden="true"
+          ></span>
+          <span class="sr-only">LinkedIn</span></a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/louissse">
+          <span class="fa-brands fa-github animate pop" aria-hidden="true"
+          ></span>
+          <span class="sr-only">Github</span></a
+        >
+      </li>
+      <li><a href="#Resume" class="button">Resume</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  /*navbar*/
+
+  nav {
+    font-family: var(--oxygen);
+    font-size: 80%;
+    padding: 2rem;
+  }
+
+  nav h1 a {
+    font-family: var(--oxygen);
+    font-size: 80%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--white);
+  }
+
+  nav h1 [class*="fa-"] {
+    font-size: 100%;
+  }
+
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+  }
+
+  nav a:hover,
+  nav [class*="fa-"]:hover {
+    color: var(--lilac);
+  }
+
+  nav .button {
+    background-color: var(--green);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--black);
+  }
+
+  nav .button:hover {
+    background-color: var(--lightgreen);
+    color: var(--black);
+  }
+
+  @media (min-width: 880px) {
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    nav li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+    }
+  }
+</style>

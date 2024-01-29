@@ -1,0 +1,23 @@
+---
+import "../styles/global.css";
+
+import "@fontsource/oxygen";
+import "@fontsource/paytone-one";
+
+import Navigation from "../components/Navigation.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Louise Høpfners portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/8e5d98ca53.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <Navigation />
+    <slot />
+  </body>
+</html>
