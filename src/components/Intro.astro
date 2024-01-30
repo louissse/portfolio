@@ -29,12 +29,23 @@ import dividerBlue from "../assets/Vectordivider-blue.svg";
   </div>
 </section>
 
-<Image class="divider" src={dividerBlue} alt="divider" />
+<svg
+  viewBox="0 0 1440 200"
+  preserveAspectRatio="none"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M8.7738e-05 0V119L1440 108V81C921 40 571.576 45.9184 8.7738e-05 0Z"
+    fill="#212D65"></path>
+  <path d="M-41 118L1440 200V92L-41 118Z" fill="#25399C"></path>
+</svg>
 
 <style>
   #intro {
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 4rem;
   }
 
   .image-container {
@@ -55,8 +66,9 @@ import dividerBlue from "../assets/Vectordivider-blue.svg";
     color: var(--lilac);
   }
 
-  .divider {
-    height: 200px;
+  svg {
+    width: 100%;
+    max-height: 200px;
   }
 
   @media (min-width: 550px) {
