@@ -5,6 +5,7 @@ import "@fontsource/oxygen";
 import "@fontsource/paytone-one";
 
 import Navigation from "../components/Navigation.astro";
+import Hamburger from "../components/Hamburger.astro";
 
 const { pageTitle, pageDescription } = Astro.props;
 ---
@@ -22,5 +23,11 @@ const { pageTitle, pageDescription } = Astro.props;
   <body>
     <Navigation />
     <slot />
+
+    <script>
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        document.querySelector(".navigation").classList.toggle("expanded");
+      });
+    </script>
   </body>
 </html>

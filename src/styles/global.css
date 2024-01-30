@@ -54,6 +54,22 @@ img {
     width: 100%;
 }
 
+/* ------------  nav styles --------------- */
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+.hamburger .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 7px;
+    background-color: var(--lilac);
+}
+
+
+
 .container {
     padding: 0 2rem 0 2rem;
 }
@@ -65,6 +81,9 @@ img {
 @media (min-width: 880px) {
     .container {
         padding: 0 6rem 0 6rem;
+    }
+    .hamburger {
+        display: none;
     }
 }
 
