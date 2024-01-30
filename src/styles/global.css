@@ -60,12 +60,12 @@ img {
 }
 @media (min-width: 550px) {
     .container {
-        padding: 0 2rem 0 2rem;
+        padding: 2rem 2rem 0 2rem;
     }
 }
 @media (min-width: 880px) {
     .container {
-        padding: 0 6rem 0 6rem;
+        padding: 6rem 6rem 0 6rem;
     }
 }
 

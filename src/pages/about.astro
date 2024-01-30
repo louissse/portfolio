@@ -1,18 +1,11 @@
 ---
-import Navigation from "../components/Navigation.astro";
-const pageTitle = "About Me!";
+import PageLayout from "../layouts/PageLayout.astro";
+const pageTitle = "About Louise Høpfners";
+const pageDescription = "This will be a description";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Navigation />
-    <h1>{pageTitle}</h1>
-  </body>
-</html>
+<PageLayout pageTitle={pageTitle} pageDescription={pageDescription}>
+  <section id="about" class="container">
+    <h2>About</h2>
+  </section>
+</PageLayout>
