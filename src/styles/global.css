@@ -29,7 +29,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--oxygen);
-    background-color: var(--darkblue);
+    background-color: var(--black);
     color: var(--white);
     font-size: var(--font-size);
 }
