@@ -1,12 +1,12 @@
 ---
 import "../styles/global.css";
-
 import "@fontsource/oxygen";
 import "@fontsource/paytone-one";
 
-import Navigation from "../components/Navigation.astro";
-import Hamburger from "../components/Hamburger.astro";
+import { Fragment } from "astro/jsx-runtime";
+import logo from "../assets/logo.svg?raw";
 
+import Navigation from "../components/Navigation.tsx";
 const { pageTitle, pageDescription } = Astro.props;
 ---
 
@@ -21,13 +21,10 @@ const { pageTitle, pageDescription } = Astro.props;
       crossorigin="anonymous"></script>
   </head>
   <body>
-    <Navigation />
+    <Navigation client:load>
+      <Fragment set:html={logo} slot="logo" />
+    </Navigation>
     <slot />
-
-    <script>
-      document.querySelector(".hamburger").addEventListener("click", () => {
-        document.querySelector(".navigation").classList.toggle("expanded");
-      });
-    </script>
   </body>
 </html>
+../components/Navigation

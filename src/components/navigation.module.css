@@ -1,0 +1,115 @@
+nav {
+    font-family: var(--oxygen);
+    font-size: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  nav [class*="fa-"] {
+    font-size: 150%;
+  }
+
+  nav a:hover,
+  nav [class*="fa-"]:hover {
+    color: var(--lilac);
+  }
+
+  nav h1 {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+    display: block;
+  }
+
+  nav h1 a {
+    font-family: var(--oxygen);
+    font-size: 80%;
+    display: flex;
+    gap: 10px;
+  }
+  nav .name {
+    align-self: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    margin: 0 0;
+  }
+
+  nav li {
+    align-self: center; 
+    display: block;
+  }
+
+  nav .button {
+    background-color: var(--green);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--black);
+  }
+
+  nav .button:hover {
+    background-color: var(--lightgreen);
+    color: var(--black);
+  }
+
+  .expanded {
+    opacity: 1;
+    height: 250px;
+  }
+  
+  @media (max-width:470px) {
+    .name {
+        display: none;
+    }
+  }
+  @media (max-width: 850px){
+    nav {
+        justify-content: space-between;
+    }
+    nav ul{    
+        height: 0;
+        opacity: 0;
+        margin-top: 1rem;
+        flex-flow: column;
+        direction: rtl;
+        margin: auto;
+        flex-basis: 100%;
+        padding: 0;
+        gap: 1.5rem;
+        transition: opacity 0.5s, height 0.5s allow-discrete; /*animation*/
+    }
+    nav h1
+    {
+        flex-basis: 50%;
+    }
+
+  /**------------- Hamburger ---------------- **/
+    .hamburger {
+        cursor: pointer;
+        flex-basis: 50%;
+        direction:rtl
+    }
+
+    .hamburger .line {
+        display: block;
+        width: 40px;
+        height: 3px;
+        margin-bottom: 10px;
+        background-color: var(--lilac);
+    }
+    /**------ Expanded Mobile Menu --------- **/
+
+    nav li {
+        align-self: auto;
+    }
+  }
