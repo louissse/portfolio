@@ -1,0 +1,12 @@
+.appers {
+    background-color: var(--lilac);
+}
+
+.sideDrawer { 
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+ }
+.sideDrawer.open {
+    max-height: 500px;
+ }

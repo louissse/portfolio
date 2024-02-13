@@ -7,7 +7,7 @@
     --blue: #1958D9;
     --green: #CCF2A7;
     --lightgreen:#E5FCCE;
-    --font-size: 1.3rem;
+    --font-size: 1.2rem;
     --paytone: 'Paytone One', sans-serif;
     --oxygen: 'Oxygen', sans-serif;
 }
@@ -32,6 +32,7 @@ body {
     background-color: var(--darkblue);
     color: var(--white);
     font-size: var(--font-size);
+    line-height: 1.8rem;
 }
 
 h1,
@@ -40,6 +41,7 @@ h3 {
     margin: 0;
     font-family: var(--paytone);
     font-weight: 400;
+    line-height: normal;
 }
 
 a {
@@ -60,7 +62,7 @@ img {
 }
 @media (min-width: 550px) {
     .container {
-        padding: 2rem 2rem 0 2rem;
+        padding: 2rem 3rem 0 3rem;
     }
 }
 @media (min-width: 880px) {
@@ -88,3 +90,4 @@ img {
       transform: scale(1, 1);
     }
   }
+

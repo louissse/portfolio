@@ -2,6 +2,7 @@
 import PageLayout from "../layouts/PageLayout.astro";
 import Intro from "../components/Intro.astro";
 import FeaturedProjects from "../components/FeaturedProjects.astro";
+import ReactTest from "../components/ReactTest";
 const pageTitle = "Louise Høpfners portfolio";
 const pageDescription =
   "Currently, I'm furthering my skills in CSS, JavaScript and frameworks like React.js, Next.js and Astro.js while also working as a project manager for digital projects of all shapes and sizes.";
@@ -9,5 +10,6 @@ const pageDescription =
 
 <PageLayout pageTitle={pageTitle} pageDescription={pageDescription}>
   <Intro />
+  <!-- <ReactTest client:load /> -->
   <FeaturedProjects />
 </PageLayout>
