@@ -67,6 +67,8 @@ img {
 }
 @media (min-width: 880px) {
     .container {
+        max-width: 1200px;
+        margin: 0 auto;
         padding: 4rem 6rem 0 6rem;
     }
 }
